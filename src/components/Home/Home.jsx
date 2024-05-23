@@ -1,6 +1,6 @@
 import React from 'react';
 import { Header } from '../Header/Header';
-import { Board } from './Board/Board';
+import { Information } from './Information/Information';
 import { Footer } from '../Footer/Footer';
 import styles from './Home.module.css';
 
@@ -9,8 +9,8 @@ export const Home = () => {
     <>
       <Header />
       <body className={styles.body}>
-        <div className={styles.board}>
-          <Board />
+        <div className={styles.information}>
+          <Information />
         </div>
       </body >
       <Footer />

@@ -1,5 +1,5 @@
 import React from 'react';
-import h1 from '../../../../img/h1_info.png'
+import h1 from '../../../img/h1_info.png'
 import styles from './Information.module.css';
 
 export const Information = () => {
