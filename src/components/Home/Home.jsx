@@ -1,17 +1,18 @@
 import React from 'react';
 import { Header } from '../Header/Header';
 import { Board } from './Board/Board';
-import { Information } from './Information/Information';
-import { Menu } from './Menu/Menu';
-import { Footer } from '../Footer/Footer'
+import { Footer } from '../Footer/Footer';
+import styles from './Home.module.css';
 
 export const Home = () => {
   return (
     <>
       <Header />
-        <Board />
-        <Information />
-        <Menu />
+      <body className={styles.body}>
+        <div className={styles.board}>
+          <Board />
+        </div>
+      </body >
       <Footer />
     </>
   );
