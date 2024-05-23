@@ -7,19 +7,27 @@ export const FooterMenu = () => {
       <div className={styles.footerMenuContainer}>
         <ul className={styles.ul}>
           <li className={styles.li}>
-            <a href="/">トップページ</a>
+            <a href="/" className={styles.a}>トップページ</a>
           </li>
           <li className={styles.li}>
-            <a href="http://www.yamasemi.ne.jp/about/">会社概要</a>
+            <a href="http://www.yamasemi.ne.jp/about/" className={styles.a}>
+              会社概要
+            </a>
           </li>
           <li className={styles.li}>
-            <a href="http://www.yamasemi.ne.jp/about/yakkan.pdf" target="_blank">契約約款/申込時の確認事項</a>
+            <a href="http://www.yamasemi.ne.jp/about/yakkan.pdf" target="_blank" className={styles.a}>
+              契約約款/申込時の確認事項
+            </a>
           </li>
           <li className={styles.li}>
-            <a href="http://www.yamasemi.ne.jp/privacy/">プライバシーポリシー</a>
+            <a href="http://www.yamasemi.ne.jp/privacy/" className={styles.a}>
+              プライバシーポリシー
+            </a>
           </li>
           <li className={styles.li}>
-            <a href="http://www.yamasemi.ne.jp/law/">特定商取引に関する法律に基づく表示</a>
+            <a href="http://www.yamasemi.ne.jp/law/" className={styles.a}>
+              特定商取引に関する法律に基づく表示
+            </a>
           </li>
         </ul>
       </div>
