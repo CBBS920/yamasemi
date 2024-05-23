@@ -1,0 +1,30 @@
+.footerContainer {
+    padding: 0;
+    background: #e0f1eb url(../../img/footer_bg.png) repeat-x 0 0;
+    min-height: 127px; /* 最低高さを設定 */
+    font-size: 75%;
+    line-height: 1.8;
+}
+
+.container {
+    display: flex; /* フレックスコンテナにする */
+    justify-content: space-between; /* スペースを均等に配置 */
+}
+
+.textContainer {
+    margin: 0 200px 0;
+    padding-top: 20px;
+}
+
+.yamasemi {
+    margin: 0;
+    color: #333333;
+    font-size: 92.5%;
+    text-align: left;
+}
+
+.logoContainer {
+    display: flex;
+    align-items: center; /* 垂直方向に中央揃え */
+    margin: 15px 150px 0;
+}

@@ -1,0 +1,23 @@
+.footerMenuContainer {
+    font-weight: bold;
+}
+
+.ul {
+    margin: 0 0 0 200px;
+    padding: 0;
+}
+
+.li {
+    display: inline;
+    font-size: 10px;
+    margin: 0 10px 0 0;
+    padding: 5px 0 0 16px;
+    background: url(../../../img/icon_link.gif) no-repeat 0 0.7em;
+    font-weight: normal;
+    color: #ffffff;
+}
+
+a {
+    color: #ffffff;
+    font-size: 10px;
+}

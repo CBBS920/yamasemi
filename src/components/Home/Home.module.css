@@ -1,0 +1,29 @@
+.body {
+    background-size: cover; /* 背景画像をカバー */
+    background-position: center; /* 背景画像を中央に配置 */
+    background-repeat: no-repeat; /* 背景画像を繰り返さない */
+    animation: slideShow 20s infinite;
+    height: calc(100vh - 127px); /* フッターの高さを考慮して高さを調整 */
+    width: 100%; /* 幅を画面全体に設定 */
+    overflow: hidden; /* スクロールバーを非表示にする */
+}
+
+.board {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%; /* 残りの高さを占める */
+}
+
+@keyframes slideShow {
+    0% {
+      background-image: url('../../img/a1.jpg');
+    }
+    50.% {
+      background-image: url('../../img/a2.jpg');
+    }
+    100% {
+      background-image: url('../../img/a3.jpg');
+    }
+  }

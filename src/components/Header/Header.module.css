@@ -1,19 +1,46 @@
 .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 10px solid #45b035;
+    position: relative; /* Ensure that the container is positioned relatively */
+  }
+  
+  .leftContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
     font-family: 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', sans-serif;
     font-size: 100%;
     line-height: 1.7;
-}
-
-.icon {
+    margin-left: 100px;
+  }
+  
+  .centerContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-right: 100px;
+  }
+  
+  .rightContainer {
+    text-align: right;
+    position: relative; /* Ensure the rightContainer is positioned relatively */
+    margin: 0 100px;
+  }
+  
+  .icon {
     cursor: pointer;
     height: 88px;
     width: 308px;
-}
-
-.tag {
+  }
+  
+  .tag {
     color: #666666;
     font-size: 75%;
     padding: 0;
-    margin: 0 0 0 100px;
-    left: 10px;
-}
+    margin: 0;
+  }
+  
