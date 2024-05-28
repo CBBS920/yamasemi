@@ -1,0 +1,53 @@
+.container {
+    font-family: sans-serif;
+    text-align: center;
+    margin-top: 20px; /* 上部に間隔を追加 */
+  }
+  
+  .slider {
+    position: relative;
+    width: 60%; /* スライダー全体の幅 */
+    height: 470px; /* スライダー全体の高さ */
+    overflow: hidden;
+    margin: 0 auto;
+    background-color: #f4f4f4; /* 背景色をグレーに設定 */
+    padding: 10px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .sliderWrapper {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .slider img {
+    width: 100%; /* 画像の幅を調整 */
+    height: 100%;
+    margin: 0 45px; /* 画像の間隔を設定 */
+  }
+  
+  .dots {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+  }
+  
+  .dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: lightgray;
+    cursor: pointer;
+  }
+  
+  .dotActive {
+    background-color: darkgray;
+  }
+  

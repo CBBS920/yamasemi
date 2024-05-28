@@ -3,27 +3,29 @@
     background-position: center; /* 背景画像を中央に配置 */
     background-repeat: no-repeat; /* 背景画像を繰り返さない */
     animation: slideShow 20s infinite;
-    height: calc(100vh - 127px); /* フッターの高さを考慮して高さを調整 */
+    height: calc(135vh - 127px); /* フッターの高さを考慮して高さを調整 */
     width: 100%; /* 幅を画面全体に設定 */
-    overflow: hidden; /* スクロールバーを非表示にする */
-}
-
-.information {
+    overflow: hidden; /*スクロールバーを非表示にする */
+    padding-top: 50px; /* 上部に間隔を追加 */
+  }
+  
+  .information {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100%; /* 残りの高さを占める */
-}
-
-@keyframes slideShow {
+    height: 55%; /* 残りの高さを占める */
+  }
+  
+  @keyframes slideShow {
     0% {
       background-image: url('../../img/a2c.jpeg');
     }
-    50.% {
+    50% {
       background-image: url('../../img/a2.jpg');
     }
     100% {
       background-image: url('../../img/a3.jpg');
     }
   }
+  
