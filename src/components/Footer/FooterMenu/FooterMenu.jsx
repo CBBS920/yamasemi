@@ -1,6 +1,7 @@
 import React from 'react';
 import styles from './FooterMenu.module.css';
 
+// フッターのメニューコンポーネント
 export const FooterMenu = () => {
   return (
     <>
