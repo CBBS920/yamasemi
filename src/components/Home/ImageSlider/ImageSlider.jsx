@@ -6,9 +6,11 @@ import styles from "./ImageSlider.module.css";
 
 const images = [image1, image2, image3];
 
+// スライド広告コンポーネント
 export const ImageSlider = () => {
     const [currentIndex, setCurrentIndex] = useState(0);
 
+    // 4秒後にスライドさせる処理
     useEffect(() => {
         const interval = setInterval(() => {
             setCurrentIndex((prevIndex) =>

@@ -3,6 +3,7 @@ import { FooterMenu } from './FooterMenu/FooterMenu';
 import logo from '../../img/logo_footer.png';
 import styles from './Footer.module.css';
 
+// フッターコンポーネント
 export const Footer = () => {
   return (
     <>

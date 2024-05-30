@@ -5,6 +5,7 @@ import logo from '../../img/logo.png';
 import link from '../../img/nav-header_link.png';
 import styles from './Header.module.css';
 
+// ヘッダーコンポーネント
 export const Header = () => {
   return (
     <>

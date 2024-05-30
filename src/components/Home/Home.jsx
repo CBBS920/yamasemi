@@ -5,6 +5,7 @@ import { Information } from './Information/Information';
 import { Footer } from '../Footer/Footer';
 import styles from './Home.module.css';
 
+// やませみトップ画面
 export const Home = () => {
   return (
     <>

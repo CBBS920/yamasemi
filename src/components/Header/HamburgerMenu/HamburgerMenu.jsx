@@ -1,9 +1,11 @@
 import React, { useState } from 'react';
 import styles from './HamburgerMenu.module.css';
 
+// メニューボタンコンポーネント
 export const HamburgerMenu = () => {
   const [isOpen, setIsOpen] = useState(false);
 
+  // ボタン押下時のスタイル変更フラグ
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
