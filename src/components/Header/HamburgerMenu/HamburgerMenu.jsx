@@ -19,7 +19,7 @@ export const HamburgerMenu = () => {
       </div>
       {isOpen && (
         <div className={styles.menu}>
-          <a href="/about">トップページ</a>
+          <a href="/">トップページ</a>
           <a href="/">光エリア接続サービス</a>
           <a href="/">無線エリア接続サービス</a>
           <a href="/">オプションサービス</a>
