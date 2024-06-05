@@ -1,0 +1,34 @@
+.container {
+    font-family: sans-serif;
+    text-align: center;
+    width: 60%;
+    overflow: hidden;
+    margin: 0 auto;
+    background-color: #ffffff; 
+    padding: 10px;
+    border: 1px solid #DFDFDF;
+    border-radius: 15px;
+  }
+
+  .ul {
+    margin: 0 10px;
+    color: #666;
+    font-size: 85%;
+  }
+
+  .li {
+    position: relative;
+    margin: 0 0 4px;
+    padding-left: 1.9em;
+    line-height: 1.5;
+    zoom: 1;
+    list-style-type: none;
+    font-size: 11px;
+    text-align: left;
+  }
+
+  .mousikomi {
+    padding: 20px 20px;
+    border: 0;
+    vertical-align: middle;
+  }

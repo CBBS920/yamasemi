@@ -4,10 +4,10 @@ import logo from '../../img/logo_footer.png';
 import styles from './Footer.module.css';
 
 // フッターコンポーネント
-export const Footer = () => {
+export const Footer = (props) => {
   return (
     <div className={styles.footerContainer}>
-      <FooterMenu />
+      <FooterMenu setActiveTab={props.setActiveTab} />
       <div className={styles.container}>
         <div className={styles.textContainer}>
           <p className={styles.yamasemi}>
