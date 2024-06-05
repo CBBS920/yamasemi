@@ -1,16 +1,15 @@
 import React from 'react';
 import { HamburgerMenu } from './HamburgerMenu/HamburgerMenu';
-import { Home } from '../Home/Home';
 import logo from '../../img/logo.png';
 import link from '../../img/nav-header_link.png';
 import styles from './Header.module.css';
 
 // ヘッダーコンポーネント
-export const Header = () => {
+export const Header = (props) => {
   return (
     <div className={styles.container}>
       <div className={styles.leftContainer}>
-        <a href={Home} className={styles.icon}>
+        <a href="/" className={styles.icon}>
           <img src={logo} alt='やませみネット' />
         </a>
         <p className={styles.tag}>やませみネット | 榛原郡川根本町 超高速ブロードバンドサービス</p>
@@ -21,7 +20,7 @@ export const Header = () => {
         </a>
       </div>
       <div className={styles.rightContainer}>
-        <HamburgerMenu />
+        <HamburgerMenu setActiveTab={props.setActiveTab} />
       </div>
     </div>
   );

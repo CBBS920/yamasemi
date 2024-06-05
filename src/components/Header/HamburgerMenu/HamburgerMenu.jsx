@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import styles from './HamburgerMenu.module.css';
 
 // メニューボタンコンポーネント
-export const HamburgerMenu = () => {
+export const HamburgerMenu = (props) => {
   const [isOpen, setIsOpen] = useState(false);
 
   // ボタン押下時のスタイル変更フラグ
@@ -19,8 +19,18 @@ export const HamburgerMenu = () => {
       </div>
       {isOpen && (
         <div className={styles.menu}>
-          <a href="/">トップページ</a>
-          <a href="/">光エリア接続サービス</a>
+          <button onClick={() => {
+            props.setActiveTab('tab1');
+            toggleMenu();
+          }}>
+            トップページ
+          </button>
+          <button onClick={() => {
+            props.setActiveTab('tab2');
+            toggleMenu();
+          }}>
+            光エリア接続サービス
+          </button>
           <a href="/">無線エリア接続サービス</a>
           <a href="/">オプションサービス</a>
           <a href="/">ケーブルラインサービス</a>
