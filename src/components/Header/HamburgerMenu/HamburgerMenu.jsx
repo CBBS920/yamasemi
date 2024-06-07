@@ -1,18 +1,31 @@
 import React, { useState } from 'react';
+import { TOP_PAGE,
+  OPTICAL_AREA_CONNECTION,
+  WIRELESS_AREA_CONNECTION,
+  OPTIONAL_SERVICES,
+  CABLE_LINE_SERVICES,
+  IP_PHONE_SERVICES,
+  KAWANE_PHONE_SERVICES,
+  YAMASEMI_MOBILE,
+  APPLICATION,
+  APPLICATION_URL,
+  CONTACT_INFOMATION,
+  CONTACT_URL
+ } from '../../../utils/constants';
 import styles from './HamburgerMenu.module.css';
 
 // メニューボタンコンポーネント
 export const HamburgerMenu = (props) => {
   const [isOpen, setIsOpen] = useState(false);
 
-  // ボタン押下時のスタイル変更フラグ
+  // メニューの項目を押下時にメニューを閉じる処理
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
 
   return (
     <div className={styles.hamburgerMenu}>
-      <div className={`${styles.icon} ${isOpen ? styles.active : ''}`} onClick={toggleMenu}>
+      <div className={`${styles.icon} ${isOpen ? styles.active : ''}`} role="button" onClick={toggleMenu}>
         <span></span>
         <span></span>
         <span></span>
@@ -23,22 +36,22 @@ export const HamburgerMenu = (props) => {
             props.setActiveTab('tab1');
             toggleMenu();
           }}>
-            トップページ
+            {TOP_PAGE}
           </button>
           <button onClick={() => {
             props.setActiveTab('tab2');
             toggleMenu();
           }}>
-            光エリア接続サービス
+            {OPTICAL_AREA_CONNECTION}
           </button>
-          <a href="/">無線エリア接続サービス</a>
-          <a href="/">オプションサービス</a>
-          <a href="/">ケーブルラインサービス</a>
-          <a href="/">050IP 電話サービス</a>
-          <a href="/">かわねフォンサービス</a>
-          <a href="/">やませみモバイル</a>
-          <a href="https://secure.pxbb.jp/~yamasemi/entry_service/">お申込み</a>
-          <a href="http://www.yamasemi.ne.jp/contact/">お問い合わせ・資料請求</a>
+          <a href="/">{WIRELESS_AREA_CONNECTION}</a>
+          <a href="/">{OPTIONAL_SERVICES}</a>
+          <a href="/">{CABLE_LINE_SERVICES}</a>
+          <a href="/">{IP_PHONE_SERVICES}</a>
+          <a href="/">{KAWANE_PHONE_SERVICES}</a>
+          <a href="/">{YAMASEMI_MOBILE}</a>
+          <a href={APPLICATION_URL}>{APPLICATION}</a>
+          <a href={CONTACT_URL}>{CONTACT_INFOMATION}</a>
         </div>
       )}
     </div>
