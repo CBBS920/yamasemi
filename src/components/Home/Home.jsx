@@ -14,9 +14,7 @@ export const Home = () => {
   const HomePage = () => {
     return (
       <>
-        <div>
-          <ImageSlider />
-        </div>
+        <ImageSlider />
         <div className={styles.information}>
           <Information />
         </div>
