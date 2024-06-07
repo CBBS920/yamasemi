@@ -2,6 +2,7 @@ import React from 'react';
 import { HamburgerMenu } from './HamburgerMenu/HamburgerMenu';
 import logo from '../../img/logo.png';
 import link from '../../img/nav-header_link.png';
+import { YAMASEMI_NET_KBBS, CBBS_URL } from '../../utils/constants';
 import styles from './Header.module.css';
 
 // ヘッダーコンポーネント
@@ -10,13 +11,13 @@ export const Header = (props) => {
     <div className={styles.container}>
       <div className={styles.leftContainer}>
         <a href="/" className={styles.icon}>
-          <img src={logo} alt='やませみネット' />
+          <img src={logo} alt="Logo" />
         </a>
-        <p className={styles.tag}>やませみネット | 榛原郡川根本町 超高速ブロードバンドサービス</p>
+        <p className={styles.tag}>{YAMASEMI_NET_KBBS}</p>
       </div>
       <div className={styles.centerContainer}>
-        <a href='http://www.cbbs.jp' target='_blank'>
-          <img src={link} alt="CBBS株式会社" height="35" width="375" />
+        <a href={CBBS_URL}>
+          <img src={link} alt="Center Link" />
         </a>
       </div>
       <div className={styles.rightContainer}>

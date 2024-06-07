@@ -12,7 +12,7 @@
   width: 60px;
   height: 40px;
   position: relative;
-  z-index: 1010; /* Ensure the icon is above the menu */
+  z-index: 1010;
 }
 
 .icon span {

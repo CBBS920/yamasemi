@@ -1,4 +1,14 @@
 import React from 'react';
+import { HOME_URL,
+  TOP_PAGE,
+  COMPANY_PROFILE_URL,
+  COMPANY_PROFILE,
+  COVENANTS_URL,
+  COVENANTS,
+  PRIVACY_POLICY_URL,
+  PRIVACY_POLICY,
+  SPECIFIED_COMMERCIAL_TRANSACTIONS_URL,
+  SPECIFIED_COMMERCIAL_TRANSACTIONS } from '../../../utils/constants';
 import styles from './FooterMenu.module.css';
 
 // フッターのメニューコンポーネント
@@ -7,26 +17,26 @@ export const FooterMenu = () => {
     <div className={styles.footerMenuContainer}>
       <ul className={styles.ul}>
         <li className={styles.li}>
-          <a href="/" className={styles.a}>トップページ</a>
+          <a href={HOME_URL} className={styles.a}>{TOP_PAGE}</a>
         </li>
         <li className={styles.li}>
-          <a href="http://www.yamasemi.ne.jp/about/" className={styles.a}>
-            会社概要
+          <a href={COMPANY_PROFILE_URL} className={styles.a}>
+            {COMPANY_PROFILE}
           </a>
         </li>
         <li className={styles.li}>
-          <a href="http://www.yamasemi.ne.jp/about/yakkan.pdf" target="_blank" className={styles.a}>
-            契約約款/申込時の確認事項
+          <a href={COVENANTS_URL} className={styles.a}>
+            {COVENANTS}
           </a>
         </li>
         <li className={styles.li}>
-          <a href="http://www.yamasemi.ne.jp/privacy/" className={styles.a}>
-            プライバシーポリシー
+          <a href={PRIVACY_POLICY_URL} className={styles.a}>
+            {PRIVACY_POLICY}
           </a>
         </li>
         <li className={styles.li}>
-          <a href="http://www.yamasemi.ne.jp/law/" className={styles.a}>
-            特定商取引に関する法律に基づく表示
+          <a href={SPECIFIED_COMMERCIAL_TRANSACTIONS_URL} className={styles.a}>
+            {SPECIFIED_COMMERCIAL_TRANSACTIONS}
           </a>
         </li>
       </ul>
