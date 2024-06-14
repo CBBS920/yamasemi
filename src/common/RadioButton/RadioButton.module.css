@@ -1,0 +1,69 @@
+/* 入力要素の基本スタイル */
+.optionInput {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+  position: relative;
+  height: 30px;
+  width: 30px;
+  transition: all 0.15s ease-out;
+  background: #cbd1d8;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  outline: none;
+  z-index: 1000;
+  border-radius: 50%;
+}
+
+/* ホバー時の効果 */
+.optionInput:hover {
+  background: #9faab7;
+}
+
+/* チェックされた状態の背景色 */
+.optionInput:checked {
+  background: #40e0d0;
+}
+
+/* チェックされた状態のチェックマーク */
+.optionInput:checked::before {
+  content: '';
+  display: block;
+  width: 7px;
+  height: 14px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  transform: rotate(45deg);
+  position: absolute;
+  top: 42%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+/* ラジオボタンに不要な擬似要素を削除 */
+.optionInput:checked::after {
+  content: none; /* これがリップルエフェクトを削除します。 */
+}
+
+/* ラベルのスタイリング */
+.label {
+  display: flex; /* Flexbox を使って横並びに */
+  align-items: center; /* 中央揃え */
+  line-height: 40px;
+  gap: 8px; /* ラジオボタンとラベルの間隔 */
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.error {
+  color: red;
+  font-size: 12px;
+}

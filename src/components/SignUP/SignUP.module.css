@@ -1,0 +1,121 @@
+.signUPContainer {
+    font-family: sans-serif;
+    width: 60%;
+    height: 92%;
+    overflow: hidden;
+    margin: 0 auto;
+    background-color: #ffffff; 
+    padding: 19px;
+    border: 1px solid #DFDFDF;
+    border-radius: 15px;
+}
+
+.h1 {
+    margin-bottom: 0;
+    vertical-align: bottom;
+    text-align: left;
+}
+
+.title {
+    border-bottom: 2px solid #75c154;
+    padding-left: 10px;
+    height: 40px;
+}
+
+.h2 {
+    color: #75c154;
+    font-size: 15.6px;
+}
+
+.container {
+    border-color: -moz-use-text-color #DFDFDF #DFDFDF;
+    border-image: none;
+    border-right: 1px solid #DFDFDF;
+    border-style: none solid solid;
+    border-width: medium 1px 1px;
+    padding: 10px 10px 10px;
+}
+
+.p {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    margin: 5px; /* 必要ならマージンをリセット */
+}
+
+.indispensable {
+    background: none repeat scroll 0 0 #F1F1F1;
+    border: 1px solid #CCCCCC;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.checkboxLabelCustom {
+    margin: 3px 10px;
+    font-size: 13px;
+}
+
+.kome {
+    color: #ff0000;
+    font-size: 13px;
+    margin: 0; /* スペースを整えるためにマージンをリセット */
+    padding: 0 5px; /* 必要ならパディングを調整 */
+}
+
+.radioLabelCustom {
+    margin-left: 10px;
+    font-size: 13px;
+}
+
+.courseContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.courseGroup {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.courseHeader {
+    font-weight: bold;
+    margin: 0;
+    font-size: 13px;
+}
+
+.emailContainer {
+    display: flex;
+    align-items: center; /* アイテムを縦方向に中央寄せ */
+    gap: 10px; /* ラベルとテキストボックスの間のスペース */
+    padding-bottom: 10px; /* パディングをリセット */
+    margin: 0;
+    width: 100%;
+}
+
+.mailP {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    margin: 5px;
+}
+
+.creditBack {
+    background: none repeat scroll 0 0 #F1F1F1;
+    border: 1px solid #CCCCCC;
+    gap: 10px;
+}
+
+.text {
+    color: #4D4C4C;
+    font-size: 13px;
+    margin: 5px 10px;
+}
+
+.dropdown {
+    text-align: left;
+    font-size: 13px;
+    width: 80%;
+}

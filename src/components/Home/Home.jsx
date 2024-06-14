@@ -3,6 +3,7 @@ import { Header } from '../Header/Header';
 import { ImageSlider } from './ImageSlider/ImageSlider';
 import { Information } from './Information/Information';
 import { OpticalAreaConnection } from '../OpticalAreaConnection/OpticalAreaConnection';
+import { SignUP } from '../SignUP/SignUP';
 import { Footer } from '../Footer/Footer';
 import styles from './Home.module.css';
 
@@ -29,6 +30,22 @@ export const Home = () => {
         return <HomePage />;
       case 'tab2':
         return <OpticalAreaConnection />;
+      // case 'tab3':
+      //   return <無線エリア接続サービス />;
+      // case 'tab4':
+      //   return <オプションサービス />;
+      // case 'tab5':
+      //   return <ケーブルライン />;
+      // case 'tab6':
+      //   return <050IP 電話サービス />;
+      // case 'tab7':
+      //   return <川根フォンサービス />;
+      // case 'tab8':
+      //   return <やませみモバイル />;
+      case 'tab9':
+        return <SignUP />;
+      // case 'tab10':
+      //   return <お問い合わせ・資料請求 />;
       default:
         return <HomePage />;
     }

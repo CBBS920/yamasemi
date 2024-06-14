@@ -39,7 +39,7 @@ export const ImageSlider = () => {
                         <span
                             key={index}
                             className={`${styles.dot} ${index === currentIndex ? styles.dotActive : ""}`}
-                            role="button" // ボタンとしての役割を追加
+                            role="button" // ボタンとしての役割を追加(Jest用)
                             onClick={() => handleDotClick(index)}
                         ></span>
                     ))}

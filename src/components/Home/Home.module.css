@@ -3,10 +3,10 @@
     background-position: center; /* 背景画像を中央に配置 */
     background-repeat: no-repeat; /* 背景画像を繰り返さない */
     animation: slideShow 20s infinite;
-    height: calc(135vh - 127px); /* フッターの高さを考慮して高さを調整 */
+    /* height: calc(135vh - 127px); */
     width: 100%; /* 幅を画面全体に設定 */
     overflow: hidden; /*スクロールバーを非表示にする */
-    padding-top: 50px; /* 上部に間隔を追加 */
+    padding: 50px 0 50px; /* 上部に間隔を追加 */
   }
   
   .information {

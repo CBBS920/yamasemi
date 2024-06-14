@@ -50,7 +50,12 @@ export const HamburgerMenu = (props) => {
           <a href="/">{IP_PHONE_SERVICES}</a>
           <a href="/">{KAWANE_PHONE_SERVICES}</a>
           <a href="/">{YAMASEMI_MOBILE}</a>
-          <a href={APPLICATION_URL}>{APPLICATION}</a>
+          <button onClick={() => {
+            props.setActiveTab('tab9');
+            toggleMenu();
+          }}>
+            {APPLICATION}
+          </button>
           <a href={CONTACT_URL}>{CONTACT_INFOMATION}</a>
         </div>
       )}

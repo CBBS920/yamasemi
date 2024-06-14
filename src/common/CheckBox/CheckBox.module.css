@@ -1,0 +1,96 @@
+/* Basic styles for input elements */
+.optionInput {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+  position: relative;
+  height: 30px;
+  width: 30px;
+  background: #cbd1d8;
+  border: none;
+  cursor: pointer;
+  display: inline-block;
+  outline: none;
+  transition: all 0.15s ease-out;
+}
+
+/* Hover effect */
+.optionInput:hover {
+  background: #9faab7;
+}
+
+/* Checked state background color */
+.optionInput:checked {
+  background: #40e0d0;
+}
+
+/* Checked state with check mark */
+.optionInput:checked::before {
+  content: '';
+  display: block;
+  width: 10px;
+  height: 18px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  transform: rotate(45deg);
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+/* Ripple effect */
+.optionInput:checked::after {
+  -webkit-animation: click-wave 0.65s;
+  -moz-animation: click-wave 0.65s;
+  animation: click-wave 0.65s;
+  background: rgba(64, 224, 208, 0.5);
+  content: '';
+  display: block;
+  position: absolute;
+  border-radius: 50%;
+  z-index: 0;
+}
+
+/* Ripple effect keyframes */
+@keyframes click-wave {
+  0% {
+    height: 35px;
+    width: 35px;
+    opacity: 0.35;
+    top: 50%;
+    left: 50%;
+    margin-left: -17.5px;
+    margin-top: -17.5px;
+  }
+  100% {
+    height: 200px;
+    width: 200px;
+    margin-left: -100px;
+    margin-top: -100px;
+    opacity: 0;
+  }
+}
+
+/* Label styling */
+.label {
+  display: flex; /* Flexbox を使って横並びに */
+  align-items: center; /* 中央揃え */
+  line-height: 35px;
+  position: relative;
+  gap: 8px; /* Checkbox と label の間隔 */
+}
+
+/* CheckBox.module.css */
+.wrapper {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.error {
+  color: red;
+  font-size: 12px;
+}
